@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rawat G Flower Decorations</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+}
+
+header{
+background:linear-gradient(135deg,#000,#4d3a00);
+padding:40px 20px;
+text-align:center;
+}
+
+header h1{
+color:gold;
+font-size:45px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+margin:10px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.call{
+background:gold;
+color:black;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+section{
+padding:50px 10%;
+}
+
+h2{
+color:gold;
+text-align:center;
+margin-bottom:30px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.box{
+background:#1c1c1c;
+padding:25px;
+border-radius:15px;
+border:1px solid gold;
+text-align:center;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+}
+
+form{
+background:#1c1c1c;
+padding:30px;
+border-radius:20px;
+}
+
+input, textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:gold;
+border:none;
+font-size:18px;
+font-weight:bold;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+footer h3{
+color:gold;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:32px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🌸 Rawat G Flower Decorations 🌸</h1>
+
+<p>हर खुशी को फूलों से सजाएं, यादगार बनाएं हर पल</p>
+
+<p>📍 ढेवरी, जमुई, बिहार</p>
+
+<p>📞 9801781896 | 6299678936</p>
+
+<a href="tel:9801781896" class="btn call">📞 Call Now</a>
+
+<a href="https://wa.me/919801781896?text=नमस्ते%20Rawat%20G%20Flower%20Decorations,%20मुझे%20डेकोरेशन%20बुक%20करना%20है।"
+class="btn whatsapp">
+🟢 WhatsApp Booking
+</a>
+
+</header>
+
+<section>
+
+<h2>🌷 हमारी सेवाएं</h2>
+
+<div class="services">
+
+<div class="box">
+<h3>💐 Wedding Decoration</h3>
+<p>शादी और रिसेप्शन की शानदार सजावट।</p>
+</div>
+
+<div class="box">
+<h3>🌹 Stage Decoration</h3>
+<p>स्टेज और मंडप की आकर्षक सजावट।</p>
+</div>
+
+<div class="box">
+<h3>🎂 Birthday Decoration</h3>
+<p>बर्थडे पार्टी के लिए विशेष सजावट।</p>
+</div>
+
+<div class="box">
+<h3>🚗 Car Decoration</h3>
+<p>दूल्हा-दुल्हन की कार की प्रीमियम सजावट।</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>📸 Gallery</h2>
+
+<div class="gallery">
+
+<div class="box">Wedding Decoration</div>
+
+<div class="box">Stage Decoration</div>
+
+<div class="box">Birthday Decoration</div>
+
+<div class="box">Car Decoration</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>📅 Online Booking</h2>
+
+<form onsubmit="bookNow(event)">
+
+<input type="text" id="name" placeholder="आपका नाम" required>
+
+<input type="tel" id="phone" placeholder="मोबाइल नंबर" required>
+
+<input type="date" id="date" required>
+
+<textarea id="address" rows="5" placeholder="कार्यक्रम का पता"></textarea>
+
+<button type="submit">BOOK NOW</button>
+
+</form>
+
+</section>
+
+<section>
+
+<h2>📞 Contact Us</h2>
+
+<div class="box">
+
+<h3>Rawat G Flower Decorations</h3>
+
+<p>📞 9801781896</p>
+
+<p>📞 6299678936</p>
+
+<p>📍 ढेवरी, जमुई, बिहार</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Rawat G Flower Decorations</h3>
+
+<p>🌸 फूलों से सजाएं हर खुशी, यादगार बनाएं हर पल 🌸</p>
+
+</footer>
+
+<script>
+
+function bookNow(event){
+
+event.preventDefault();
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let date=document.getElementById("date").value;
+let address=document.getElementById("address").value;
+
+let msg=`नमस्ते, मेरा नाम ${name} है।
+मोबाइल नंबर: ${phone}
+कार्यक्रम की तारीख: ${date}
+पता: ${address}
+
+मुझे डेकोरेशन बुक करना है।`;
+
+window.open(
+"https://wa.me/919801781896?text="+encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+</script>
+
+</body>
+</html>
